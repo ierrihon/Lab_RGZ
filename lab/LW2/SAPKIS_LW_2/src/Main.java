@@ -40,7 +40,7 @@ public class Main {
                         idMax = i+1;
                     }
                     if(idMax == length || idMax+1==length){
-                        System.out.println("\nУ массиві: " + Arrays.toString(arr)+"\nкількість заповнених комірок становить: " + temp);return;
+                        System.out.println("\nУ массиві: " + Arrays.toString(arr)+"\nКількість заповнених комірок становить: " + temp);return;
                     }
                 }
             }else{
