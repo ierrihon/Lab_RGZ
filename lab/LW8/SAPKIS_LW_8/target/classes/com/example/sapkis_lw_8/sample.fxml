@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="476.0" prefWidth="826.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sapkis_lw_8.Controller">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Гра &quot;Множення&quot;" textAlignment="CENTER">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="738.0">
+         <children>
+            <Label text="Задайте число-ціль">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textTarget" prefHeight="25.0" prefWidth="83.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnTargetConf" mnemonicParsing="false" text="Підтврердити">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="738.0">
+         <children>
+            <Label text="Число-ціль:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTargetNum" text="0000000" textAlignment="CENTER">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="104.0" prefWidth="738.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets right="11.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Гравець 1">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets right="11.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Число від 2 до 9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textNumP1" prefHeight="25.0" prefWidth="100.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnNumConfP1" mnemonicParsing="false" text="Підтврердити">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="111.0">
+               <HBox.margin>
+                  <Insets right="11.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Поточне число">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCurNum" alignment="CENTER" prefHeight="85.0" prefWidth="221.0" text="0000000" textAlignment="CENTER">
+                     <font>
+                        <Font size="58.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets right="11.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Число від 2 до 9">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textNumP2" prefHeight="25.0" prefWidth="89.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnNumConfP2" mnemonicParsing="false" text="Підтврердити">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets right="11.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Гравець 2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="btnStartGame" mnemonicParsing="false" prefHeight="68.0" prefWidth="786.0" text="Почати гру">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
